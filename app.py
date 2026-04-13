@@ -21,7 +21,7 @@ rf = st.sidebar.number_input("Risk-Free (Rf) Rate %", value=3.0) / 100
 
 stock_tickers = []
 for n in range(num_stocks):
-    ticker = st.sidebar.text_input(f"Ticker for Stock {n+1}", value=f"Stock{n+1}").upper().strip()
+    ticker = st.sidebar.text_input(f"Ticker for Stock {n+1}", value=f"Stock {n+1}").upper().strip()
     stock_tickers.append(ticker)
 
 # --- Individual Stock Scenarios ---
